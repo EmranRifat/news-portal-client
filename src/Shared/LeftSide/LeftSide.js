@@ -12,7 +12,7 @@ const LeftSide = () => {
 
   return (
     <div>
-      <p>Categories: {categories.length}</p>
+      <p>All Categories</p>
       {categories.map((category) => (
         <p key={category.id}>
           <Link to={`/category/${category.id}`}>{category.name}</Link>

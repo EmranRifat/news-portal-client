@@ -32,6 +32,10 @@ const NewsCard = ({ news }) => {
           <FaShareAlt></FaShareAlt>
         </div>
       </Card.Header>
+
+
+
+      
       <Card.Body>
         <Card.Title>{title}</Card.Title>
         <Card.Img variant="top" src={image_url} />

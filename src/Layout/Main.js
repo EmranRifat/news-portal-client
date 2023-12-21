@@ -5,11 +5,14 @@ import Footer from '../Shared/Footer/Footer';
 import Header from '../Shared/Header/Header';
 import LeftSide from '../Shared/LeftSide/LeftSide';
 import RightSide from '../Shared/RightSide/RightSide';
+import NavigationBar from '../Shared/Nav/NavigationBar';
 
 const Main = () => {
     return (
         <div>
             <Header></Header>
+            <NavigationBar></NavigationBar>
+
           <Container>
             <Row>
                 <Col lg="2" className='d-none d-lg-block'>

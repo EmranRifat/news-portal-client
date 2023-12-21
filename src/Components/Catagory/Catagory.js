@@ -1,8 +1,9 @@
 import React from "react";
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, useParams } from "react-router-dom";
 import NewsCard from "../../Shared/NewsCard/NewsCard";
 
 const Catagory = () => {
+  const {id}=useParams()
   const CategoryNews=useLoaderData();
   return (
     <div>

@@ -7,6 +7,8 @@ import Register from "./Components/Login/Register/Register";
 import News from "./Components/News/News";
 import Main from "./Layout/Main";
 import PrivateRoute from "./Route/PrivateRoute";
+import LoginLayout from "./Layout/LoginLayout";
+import Terms from "./Shared/Terms/Terms";
 
 function App() {
   const router = createBrowserRouter([
@@ -40,16 +42,35 @@ function App() {
               `https://news-portal-server-lyart.vercel.app/news/${params.id}`
             ),
         },
-        {
-          path: "/login",
-          element: <Login></Login>,
-        },
-        {
-          path: "/register",
-          element: <Register></Register>,
-        },
+      
       ],
+      
     },
+   
+{
+  path:"/",
+  element:<LoginLayout></LoginLayout>,
+  children:[
+    {
+      path: "/login",
+      element: <Login></Login>,
+    },
+    {
+      path: "/register",
+      element: <Register></Register>,
+    },
+    {
+      path: "/terms",
+      element: <Terms></Terms>,
+    },
+
+  ]
+}
+
+
+
+
+
   ]);
   return (
     <div>

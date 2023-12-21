@@ -5,6 +5,7 @@ import { FaGoogle, FaGithub,FaFacebook,FaTwitter,FaWhatsapp,FaTwitch } from "rea
 import ListGroup from 'react-bootstrap/ListGroup';
 import Carousal from "../Carousal/Carousal";
 import { authContext } from "../../Context/Authprovider";
+import Qzone from "../Qzone/Qzone";
 
 
 const RightSide = () => {
@@ -45,17 +46,16 @@ const handleGithubSignIn=()=>{
      <div className="mt-4">
         <h5>Find us on</h5>
         <ListGroup>
-      <ListGroup.Item className="mb-2"><FaFacebook></FaFacebook> Facebook</ListGroup.Item>
-      <ListGroup.Item className="mb-2"><FaWhatsapp></FaWhatsapp> Whats-App</ListGroup.Item>
-      <ListGroup.Item className="mb-2"><FaTwitter></FaTwitter>  Twitter</ListGroup.Item>
-      <ListGroup.Item className="mb-2"><FaTwitch></FaTwitch> Twitch</ListGroup.Item>
-      <ListGroup.Item className="mb-2"><></>  Vestibulum at eros</ListGroup.Item>
+      <ListGroup.Item className="mb-2"><FaFacebook className="text-primary"></FaFacebook> Facebook</ListGroup.Item>
+      <ListGroup.Item className="mb-2"><FaWhatsapp className="text-success"></FaWhatsapp> Whats-App</ListGroup.Item>
+      <ListGroup.Item className="mb-2"><FaTwitter className="text-danger"></FaTwitter>  Twitter</ListGroup.Item>
     </ListGroup>
-      </div>
-      
-      <div>
+    <div>
 <Carousal></Carousal>
       </div>
+      </div>
+      <Qzone></Qzone>
+     
     </div>
   );
 };

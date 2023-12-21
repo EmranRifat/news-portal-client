@@ -6,6 +6,7 @@ import { authContext } from '../Context/Authprovider';
 const PrivateRoute = ({children}) => {
     const {user,loading}=useContext(authContext);
     const location=useLocation();
+    // const from=location?.state?.from.pathname||'/';                             
   
     if(loading){
         return   <Spinner animation="border" variant="primary" />
